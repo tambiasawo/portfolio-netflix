@@ -7,22 +7,20 @@ function Header() {
   const [hasScrolled, setHasScrolled] = React.useState<boolean>(false);
 
   useEffect(() => {
-    console.log("isndie");
-    console.log(hasScrolled);
+    /* use this to make sure the component has mounted befire addng eventlistner. */
     const scrollHandler = () => {
       if (window?.scrollY > 0) {
         setHasScrolled(true);
       } else setHasScrolled(false);
     };
     window.addEventListener("scroll", scrollHandler);
-    console.log(hasScrolled);
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
   }, []);
 
   return (
-    <header className={`${hasScrolled} && bg-[#141414]`}>
+    <header className={`${hasScrolled && "bg-[#141414]"}`}>
       <div className="flex items-center  justify-between  h-16 w-full">
         <div className="flex items-center justify-between text-white space-x-9">
           <img

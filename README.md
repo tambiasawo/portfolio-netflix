@@ -1,6 +1,6 @@
-# Next.js + Tailwind CSS Example
+# Netflix Clone
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This app was built using NextJS, Typescript and TailWindCSS. Data was fetched from the tmdb.org open API via Server-Side Rendering (SSR). The app was deployed using Vercel. Login credentials are: test@test.com and 123456.
 
 ## Deploy your own
 
